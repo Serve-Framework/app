@@ -12,28 +12,18 @@ return
 	'error_handler' =>
 	[
 		/*
-		 * Configure the error reporting. This denotes the level of
-		 * what errors are reported (logged and/or displayed) while Kanso is running.
-		 * @see http://php.net/manual/en/function.error-reporting.php
-		 */
-		'error_reporting' => E_ALL | E_STRICT,
-
-		/*
-		 * Choose if errors that are caught by the Kanso error and exception handlers should be
-		 * printed to the screen as part of the output or if they should be hidden from the user.
-		 * It is recommended to set this value to false when you are in production.
-		 * @see http://php.net/manual/en/errorfunc.configuration.php#ini.display-errors
+		 * Should we display errors to the end user.
+		 * Enable this for debugging only.
 		 */
 		'display_errors' => true,
 
 		/*
-		 * Choose the error level the application should die on
-		 * @see https://www.php.net/manual/en/errorfunc.constants.php
+		 * Should we log errors?
 		 */
-		'die_level' => E_ERROR,
+		'log_errors' => true,
 
 		/*
-		 * The log path to where Kanso will save errors and exceptions to file.
+		 * The log path to where Serve will save errors and exceptions to file.
 		 * This directory must exist and be writable by PHP.
 		 */
 		'log_path' => SERVE_APPLICATION_PATH . '/storage/logs',
@@ -75,7 +65,7 @@ return
 	 * Send response
 	 * ---------------------------------------------------------
 	 *
-	 * This tells Kanso to automatically send the response body,
+	 * This tells Serve to automatically send the response body,
 	 * headers, cookie, session etc.. on all incoming requests.
 	 * This is the default behavior for both the framework and the cms.
 	 * This means that if the the router matches a route, the
@@ -136,7 +126,7 @@ return
 	[
 		/*
 		 * Services required for only the core framework. This will
-		 * result in the Kanso framework with out the CMS.
+		 * result in the Serve framework with out the CMS.
 		 */
 		'framework' =>
 		[
