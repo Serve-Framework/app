@@ -23,7 +23,7 @@ class Cron extends Controller
 	{
 		if ($this->model->validate())
 		{
-			$this->model->emailQueue();
+			// Process CRON job
 
 			return true;
 		}

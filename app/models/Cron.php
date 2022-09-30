@@ -28,18 +28,4 @@ class Cron extends Model
     {
         return $this->Request->queries('key') === $this->Config->get('application.secret');
     }
-
-    /**
-     * Handles email queue processing.
-     */
-    public function emailQueue(): void
-    {
-        // Process email queue here
-
-        $this->Response->status()->set(200);
-
-        $this->Response->format()->set('txt');
-
-        $this->Response->body()->set('Cron Jobs Completed');
-    }
 }
