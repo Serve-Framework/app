@@ -1,2 +1,5 @@
 *
 !.gitignore
+!greeting.css.php
+!greeting.js.php
+!greeting.php

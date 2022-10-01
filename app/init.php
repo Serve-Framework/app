@@ -16,7 +16,7 @@ ini_set('display_errors', true);
 /*
  * Override the default path for error logs. Again this is will only be used if
  * error_reporting is enabled. It will also only log errors NOT caught by
- * the Kanso error and exception handlers.
+ * the Serve error and exception handlers.
  */
 ini_set('error_log', __DIR__ . '/storage/logs/' . date('d_m_y') . '_php_errors.log');
 
@@ -34,7 +34,7 @@ set_error_handler(function ($code, $message, $file, $line)
 });
 
 /*
- * Path to the Kanso app directory.
+ * Path to the Serve app directory.
  * This is REQUIRED for the application to function
  * properly.
  */

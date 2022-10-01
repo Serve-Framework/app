@@ -15,7 +15,9 @@ use app\models\Greeting as GreetingModel;
  *
  * Examples that come bundled with the framework
  */
-$serve->Router->get('/', GreetingController::class . '@welcome', GreetingModel::class);
+$serve->Router->get('/', GreetingController::class . '@get', GreetingModel::class);
+
+$serve->Router->post('/', GreetingController::class . '@post', GreetingModel::class);
 
 /*
  * ---------------------------------------------------------
