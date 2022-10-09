@@ -36,6 +36,7 @@ return
 			'username' => 'root',
 			'password' => 'root',
 			'table_prefix' => 'serve_',
+			'type'     => 'mysql',
 			'options'  =>
 			[
 				'MYSQL_ATTR_INIT_COMMAND' => 'SET NAMES utf8',
