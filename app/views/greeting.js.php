@@ -42,7 +42,7 @@
          *
          * @var array
          */
-        this._testsToSkip = ['bootstrap', 'testcase', 'four', 'two'];
+        this._testsToSkip = ['bootstrap', 'testcase', 'four', 'two', 'databasetestcase'];
 
         /**
          * Total tests.
