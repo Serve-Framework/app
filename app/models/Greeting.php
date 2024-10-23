@@ -56,7 +56,7 @@ class Greeting extends Model
 
         $testname = $validated_data['name'];
 
-        $shell = new Shell(dirname(SERVE_APPLICATION_PATH));
+        $shell = new Shell(SEVE_HTTP_ROOT_PATH);
 
         $output = $shell->cmd('php', 'vendor/bin/phpunit')->option('filter', $testname)->run(true);
 

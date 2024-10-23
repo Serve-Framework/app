@@ -15,7 +15,7 @@
     {
         return str_replace('.php', '', substr($value, strrpos($value, '/') + 1));
 
-    }, $serve->Filesystem->rglob(dirname(SERVE_APPLICATION_PATH) . '/tests/*.php'))); ?>;
+    }, $serve->Filesystem->rglob(SEVE_HTTP_ROOT_PATH . '/vendor/serve/framework/tests/*.php'))); ?>;
 
     /**
      * Tests runner.

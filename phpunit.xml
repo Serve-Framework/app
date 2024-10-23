@@ -1,0 +1,8 @@
+<phpunit colors="true" bootstrap="app/bootstrap.tests.php">
+	<testsuites>
+		<testsuite name="Serve Framework Tests">
+			<directory>vendor/serve/framework/tests/unit</directory>
+			<directory>vendor/serve/framework/tests/integration</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>

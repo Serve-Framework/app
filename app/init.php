@@ -34,6 +34,12 @@ set_error_handler(function ($code, $message, $file, $line)
 });
 
 /*
+ * Path to HTTP root.
+ * This is REQUIRED for tests to run properly.
+ */
+define('SEVE_HTTP_ROOT_PATH', dirname(__DIR__));
+
+/*
  * Path to the Serve app directory.
  * This is REQUIRED for the application to function
  * properly.
@@ -45,4 +51,4 @@ define('SERVE_APPLICATION_PATH', __DIR__);
  *
  * You need to install composer to use the autoloader
  */
-include dirname(__DIR__) . '/vendor/autoload.php';
+include SEVE_HTTP_ROOT_PATH . '/vendor/autoload.php';
